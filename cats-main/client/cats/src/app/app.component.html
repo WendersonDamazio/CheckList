@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="content">
+        <a href="#" class="logo"><h1>CheckList</h1></a>
+        
+        <input class="mobile-btn" type="checkbox" id="mobile-btn" />
+        <label class="mobile-icon" for="mobile-btn"><span class="hamburguer"></span></label>
+        
+        <ul class="nav">
+            <li><a [routerLink]="['/menu']" title="Home">Menu</a></li>
+            <li><a [routerLink]="['/addcat']" title="Sobre">Adicionar tarefa</a></li>
+            <li><a [routerLink]="['/']" title="Contato">Sair</a></li>
+        </ul>
+    </div>
+</header>
+
+<router-outlet></router-outlet>

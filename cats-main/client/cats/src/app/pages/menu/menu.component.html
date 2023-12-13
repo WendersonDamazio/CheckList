@@ -1,0 +1,14 @@
+<main class="container">
+    <section class="noContent" *ngIf="cats.length == 0">
+        <p>Nenhuma tarefa adicionada
+             ainda!</p>
+    </section>
+    <section class="content" *ngFor="let cat of cats">
+        <ul>
+            <li><h3>{{ cat.cat_name }}</h3></li>
+            <!--<li>Idade: <b>{{ cat.cat_age }} anos</b></li>-->
+            <li>Descrição: <b>{{ cat.cat_breed }}</b></li>
+        </ul>
+        <button (click)="remove(cat)">Remove</button>
+    </section>
+</main>
